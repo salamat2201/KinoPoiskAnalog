@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #030637;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #3C0753;
+}
+
+section {
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1280px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.header_content__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_content__logo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.header_content__logo span {
+    color: #9AF6CB;
+    font-weight: 900;
+}
+
+.header_content__city select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #030637;
+    color: #ffffff;
+}
+
+.header_content__kinopark select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #030637;
+    color: #ffffff;
+}
+
+.header_content__search {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #030637;
+}
+
+.header_content__search__movieButton {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    margin-left: -15px;
+}
+
+.header_content__search input {
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #030637;
+    color: #ffffff;
+}
+
+.watchListMovieButton {
+    padding: 5px;
+    border: none;
+    background-color: #030637;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section_main__img {
+    position: relative;
+}
+
+.section_main__chevron {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.section_main__chevron svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.section_content__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section_content__title {
+    display: flex;
+    gap: 18px;
+}
+
+.section_content__title p {
+    color: #9AF6CB;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section_content__title__border {
+    border-left: 2px solid #ffffff;
+}
+
+.section_content__title p:hover {
+    color: #0bb764;
+    transform: scale(1.17);
+    cursor: pointer;
+}
+
+.section_content__movies {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.section_content__movies__movie__title {
+    font-size: 16px;
+    color: #ffffff;
+    max-width: 250px;
+}
+
+.section_content__movies__movie {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.section_content__movies__movie img {
+    border-radius: 8px;
+}
+
+.section_content__movies__movie img:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.section_content__movies__movie__rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid green;
+    width: 25px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px;
+    color: #ffffff;
+    background-color: green;
+}
+
+.watchListButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    background: #ffffff;
+}
+
+.watchListButtonYellow {
+    background-color: #ffe600;
+}
+
+.section_content__movies__movie__genre {
+    font-size: 14px;
+    color: #ffe600;
+}
